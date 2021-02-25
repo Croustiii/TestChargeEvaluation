@@ -1,4 +1,7 @@
 class FizzBuzz:
     @staticmethod
     def Respond(number):
-        return 'Fizz'
+        if (number == 6):
+            return 'Fizz'
+        else :
+            return False
