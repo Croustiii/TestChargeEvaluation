@@ -9,9 +9,9 @@ class FizzBuzzTest(unittest.TestCase):
         self.assertEqual(actual, expected)
 
 
-    def test_should_not_be_Fizz_with_input_10(self):
+    def test_should_not_be_Fizz_with_input_11(self):
         expected = False
-        actual = FizzBuzz.Respond(10)
+        actual = FizzBuzz.Respond(11)
         self.assertEqual(actual, expected)
     
     def test_should_be_Fizz_with_multiple_of_3_with_input_9(self):
