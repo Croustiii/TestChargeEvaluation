@@ -37,3 +37,8 @@ class FizzBuzzTest(unittest.TestCase):
         expected = 'FizzBuzz'
         actual = FizzBuzz.Respond(15)
         self.assertEqual(actual, expected)
+
+    def test_should_be_FizzBuzz_with_multiple_of_3_and_5_with_input_30(self):
+        expected = 'FizzBuzz'
+        actual = FizzBuzz.Respond(30)
+        self.assertEqual(actual, expected)
