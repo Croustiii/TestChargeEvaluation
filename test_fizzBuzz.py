@@ -1,6 +1,6 @@
 import unittest
 from fizzBuzz import *
-from error import *
+from error import ZeroErrorException
 
 class FizzBuzzTest(unittest.TestCase):
     #Test Part Rule Multiple of 3

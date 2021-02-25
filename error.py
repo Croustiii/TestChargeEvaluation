@@ -1,3 +1,5 @@
 class ZeroErrorException(Exception):
+
     def __init__(self):
-        pass
+        self.__message = 'le nombre est 0'
+    
