@@ -35,5 +35,5 @@ class FizzBuzzTest(unittest.TestCase):
     #Test part Multiple of 3 and 5
     def test_should_be_FizzBuzz_with_multiple_of_3_and_5_with_input_15(self):
         expected = 'FizzBuzz'
-        actual = FizzBuzz.Respond(5)
+        actual = FizzBuzz.Respond(15)
         self.assertEqual(actual, expected)
