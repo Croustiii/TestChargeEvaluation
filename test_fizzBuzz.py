@@ -48,3 +48,9 @@ class FizzBuzzTest(unittest.TestCase):
     def test_should_raise_exception_with_input_0(self):
         with self.assertRaises(ZeroErrorException):
             FizzBuzz.Respond(0)
+
+    
+    # Test input 0 exception raised
+    def test_should_raise_exception_with_input_negative(self):
+        with self.assertRaises(NegativeErrorException):
+            FizzBuzz.Respond(0)
