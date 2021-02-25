@@ -1,5 +1,6 @@
 import unittest
 from fizzBuzz import *
+from error import *
 
 class FizzBuzzTest(unittest.TestCase):
     #Test Part Rule Multiple of 3
@@ -42,3 +43,8 @@ class FizzBuzzTest(unittest.TestCase):
         expected = 'FizzBuzz'
         actual = FizzBuzz.Respond(30)
         self.assertEqual(actual, expected)
+
+    # Test input 0 exception raised
+    def test_should_raise_exception_with_input_0(self):
+        with self.assertRaises(ZeroErrorException):
+            FizzBuzz.Respond(0)
