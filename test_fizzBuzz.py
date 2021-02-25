@@ -13,3 +13,8 @@ class FizzBuzzTest(unittest.TestCase):
         expected = False
         actual = FizzBuzz.Respond(10)
         self.assertEqual(actual, expected)
+    
+    def test_should_be_Fizz_with_input_multiple_of_3(self):
+        expected = 'Fizz'
+        actual = FizzBuzz.Respond(9)
+        self.assertEqual(actual, expected)
