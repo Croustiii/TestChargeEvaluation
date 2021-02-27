@@ -13,3 +13,10 @@ class NegativeErrorException(Exception):
     
     def message(self):
         print(self.__message)   
+
+class NotNumberErrorException(Exception):
+    def __init__(self):
+        self.__message = 'This is not a number'
+    
+    def message(self):
+        print(self.__message)   

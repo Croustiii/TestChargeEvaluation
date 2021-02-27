@@ -5,8 +5,7 @@ from error import *
 def main() :
     try :
         number = input("Donnez moi un nombre !")
-        numInt = int(number)
-        print(FizzBuzz.Respond(numInt))
+        print(FizzBuzz.Respond(int(number)))
     except Exception as e :
         e.message()
 

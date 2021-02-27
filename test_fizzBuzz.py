@@ -11,7 +11,7 @@ class FizzBuzzTest(unittest.TestCase):
 
 
     def test_should_not_be_Fizz_with_input_11(self):
-        expected = False
+        expected = 11
         actual = FizzBuzz.Respond(11)
         self.assertEqual(actual, expected)
     
@@ -28,7 +28,7 @@ class FizzBuzzTest(unittest.TestCase):
         self.assertEqual(actual, expected)
     
     def test_should_not_be_Buzz_with_input_7(self):
-        expected = False
+        expected = 7
         actual = FizzBuzz.Respond(7)
         self.assertEqual(actual, expected)
 
@@ -54,3 +54,8 @@ class FizzBuzzTest(unittest.TestCase):
     def test_should_raise_exception_with_input_negative(self):
         with self.assertRaises(NegativeErrorException):
             FizzBuzz.Respond(-5)
+
+    # Test input not a number exception raised
+    def test_should_raise_error_if_not_a_number(self):
+        with self.assertRaises(NotNumberErrorException):
+            FizzBuzz.Respond('abc')

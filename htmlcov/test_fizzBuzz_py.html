@@ -22,9 +22,9 @@
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            38 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">13 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">25 missing</button>
+            41 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">14 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">27 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -108,12 +108,17 @@
     <p id="t54" class="run"><span class="n"><a href="#t54">54</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_should_raise_exception_with_input_negative</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t55" class="mis show_mis"><span class="n"><a href="#t55">55</a></span><span class="t">        <span class="key">with</span> <span class="nam">self</span><span class="op">.</span><span class="nam">assertRaises</span><span class="op">(</span><span class="nam">NegativeErrorException</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t56" class="mis show_mis"><span class="n"><a href="#t56">56</a></span><span class="t">            <span class="nam">FizzBuzz</span><span class="op">.</span><span class="nam">Respond</span><span class="op">(</span><span class="op">-</span><span class="num">5</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t57" class="pln"><span class="n"><a href="#t57">57</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t58" class="pln"><span class="n"><a href="#t58">58</a></span><span class="t">    <span class="com"># Test input not a number exception raised</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t59" class="run"><span class="n"><a href="#t59">59</a></span><span class="t">    <span class="key">def</span> <span class="nam">test_should_raise_error_if_not_a_number</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t60" class="mis show_mis"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="key">with</span> <span class="nam">self</span><span class="op">.</span><span class="nam">assertRaises</span><span class="op">(</span><span class="nam">NotNumberErrorException</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t61" class="mis show_mis"><span class="n"><a href="#t61">61</a></span><span class="t">            <span class="nam">FizzBuzz</span><span class="op">.</span><span class="nam">Respond</span><span class="op">(</span><span class="str">'abc'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.4</a>,
-            created at 2021-02-27 11:23 +0100
+            created at 2021-02-27 12:07 +0100
         </p>
     </div>
 </div>
